@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+   <div class="container">
+    <div class="inner">
+        <span>i</span>
+        <h1>Title</h1>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fuga unde aspernatur libero maxime ex voluptate, fugit molestiae architecto quasi culpa.</p>
+</div>
+    </div>
+    <div class="container1"><h1>Hover Me!</h1></div>
+        <div class="inner1">
+            <h1>Title</h1>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fuga unde aspernatur libero maxime ex voluptate, fugit molestiae architecto quasi culpa.</p>
+    </div>
+  <div class="container2">
+    <input type="file" accept="image/jpg,image/jpeg"
+    onchange="getImagePreview(event)">
+    <div id="preview"></div>
+        </div>
+        
+        <script type="text/javascript">
+        function getImagePreview(event){
+
+           var image=URL.createObjectURL(event.target.files[0]);
+           var imagediv=document.getElementById("preview");
+           var newimg=document.createElement("img");
+           imagediv.innerHTML="";
+           newimg.src=image;
+           newimg.width="300";
+           imagediv.appendChild(newimg);
+
+        }
+        </script>
+</body>
+</html>

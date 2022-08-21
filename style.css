@@ -1,0 +1,202 @@
+:root{
+  --background: rgb(240, 160, 13);
+  --primary:#5A4F9B;
+  --background1:#091A46;
+}
+.header{
+  position: absolute;
+  top:0px;
+  left: 0px;
+  background:var(--primary);
+  width:100%;
+  height:50px;
+  display:grid;
+  grid-template-columns:auto 4fr auto auto auto auto;
+  justify-items:center;
+  align-items: center;
+  grid-gap:5px;
+  z-index: 99;
+}
+.logo{
+  color:white;
+}
+.title{
+  color:white;
+  font-weight:bolder;
+  font-size: x-large;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.home{
+  background-color:var(--background);
+   padding: 10px;
+  border-radius: 40px;
+  grid-column: 3/4;
+}
+.login{
+  background-color:var(--background);
+  padding: 10px;
+  border-radius: 40px;
+  grid-column: 4/5;
+}
+.About{
+  background-color:var(--background);
+  padding: 10px;
+  border-radius: 40px;
+  grid-column: 5/6;
+}
+.contact{
+  background-color:var(--background);
+  padding: 10px;
+  border-radius: 40px;
+  grid-column: 6/7;
+}
+.home:hover{
+  transform:translateY(5px);
+}
+.login:hover{
+  transform:translateY(5px);
+}
+.About:hover{
+  transform:translateY(5px);
+}
+.contact:hover{
+  transform:translateY(5px);
+}
+
+a{
+  color:black;
+  text-decoration: none;
+}
+.first{
+  position: absolute;
+  left:0px;
+  width:100%;
+ background-image: url("./images/IMG-20211019-WA0009.jpg");
+  height:500px;
+  background-size:cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.container{
+  width: fit-content;
+  height: auto; 
+
+}
+.text{
+  font-family: "Bauhaus 93";
+  color: var(--primary);
+  
+}
+p{
+  width:300px;
+  color:var(--primary);
+  
+}
+button{
+ 
+  font-size: x-large;
+  color:white;
+  border-radius: 20px;
+  background-color:var(--primary);
+  font-family: 'Courier New', Courier, monospace;
+  cursor: pointer;
+}
+button:hover{
+  transform:translateY(5px);
+}
+.second{
+position:absolute;
+left:0px;
+top:510px;
+ width:100%;
+ height: 500px;
+ background: linear-gradient(45deg, #000850 0%, #000320 100%), radial-gradient(100% 225% at 100% 0%, #FF6928 0%, #000000 100%), linear-gradient(225deg, #FF7A00 0%, #000000 100%), linear-gradient(135deg, #CDFFEB 10%, #CDFFEB 35%, #009F9D 35%, #009F9D 60%, #07456F 60%, #07456F 67%, #0F0A3C 67%, #0F0A3C 100%);
+ background-blend-mode:screen,overlay, hard-light, normal;
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.img1{
+  max-width:50%;
+  overflow: hidden;
+
+}
+
+.container1 h1{
+  color:white;
+}
+.para{
+    color: white;
+}
+.third{
+  position:absolute;
+left:0px;
+top:1010px;
+ width:100%;
+ height: 500px;
+ background: radial-gradient(100% 225% at 100% 0%, #FF0000 0%, #000000 100%), linear-gradient(236deg, #00C2FF 0%, #000000 100%), linear-gradient(135deg, #CDFFEB 0%, #CDFFEB 36%, #009F9D 36%, #009F9D 60%, #07456F 60%, #07456F 67%, #0F0A3C 67%, #0F0A3C 100%);
+ background-blend-mode: overlay, hard-light, normal;
+  display:flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.img2{
+  width: 40%;
+  max-height:60%;
+}
+.fourth{
+  
+    position:absolute;
+  left:0px;
+  top:1510px;
+   width:100%;
+   height: 500px;
+   background: linear-gradient(115deg, #000000 0%, #00C508 55%, #000000 100%), linear-gradient(115deg, #0057FF 0%, #020077 100%), conic-gradient(from 110deg at -5% 35%, #000000 0deg, #FAFF00 360deg), conic-gradient(from 220deg at 30% 30%, #FF0000 0deg, #0000FF 220deg, #240060 360deg), conic-gradient(from 235deg at 60% 35%, #0089D7 0deg, #0000FF 180deg, #240060 360deg);
+   background-blend-mode: soft-light, soft-light, overlay, screen, normal;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .img3{
+    max-width:50%;
+    
+  }
+  .fifth{
+    position:absolute;
+  left:0px;
+  top:2010px;
+   width:100%;
+   height: 500px;
+   background: radial-gradient(ellipse farthest-side at 76% 77%, rgba(245, 228, 212, 0.25) 4%, rgba(255, 255, 255, 0) calc(4% + 1px)), radial-gradient(circle at 76% 40%, #fef6ec 4%, rgba(255, 255, 255, 0) 4.18%), linear-gradient(135deg, #ff0000 0%, #000036 100%), radial-gradient(ellipse at 28% 0%, #ffcfac 0%, rgba(98, 149, 144, 0.5) 100%), linear-gradient(180deg, #cd6e8a 0%, #f5eab0 69%, #d6c8a2 70%, #a2758d 100%); background-blend-mode: normal, normal, screen, overlay, normal;
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .img4{
+  width:40%;
+  }
+  .sixth{
+    position:absolute;
+  left:0px;
+  top:2510px;
+   width:100%;
+   height: 500px;
+   background: linear-gradient(123deg, #FFFFFF 0%, #00B2FF 100%), linear-gradient(236deg, #BAFF99 0%, #005E64 100%), linear-gradient(180deg, #FFFFFF 0%, #002A5A 100%), linear-gradient(225deg, #0094FF 20%, #BFF4ED 45%, #280F34 45%, #280F34 70%, #FF004E 70%, #E41655 85%, #B30753 85%, #B30753 100%), linear-gradient(135deg, #0E0220 15%, #0E0220 35%, #E40475 35%, #E40475 60%, #48E0E4 60%, #48E0E4 68%, #D7FBF6 68%, #D7FBF6 100%);
+   background-blend-mode: overlay, overlay, overlay, darken, normal;
+   display: flex;
+   align-items: center;
+   justify-content:space-evenly;
+  }
+  
+.img5{
+  max-width:50%;
+}
+@media(max-width:500px) {
+  .second,.third,.fourth,.fifth,.sixth{
+    flex-direction: column-reverse;
+  }
+}
